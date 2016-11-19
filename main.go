@@ -30,7 +30,6 @@ func (bc *BlockCV) Invoke(stub shim.ChaincodeStubInterface, function string, arg
 	for i := 0; i < len(args); i++ {
 		fmt.Print(args[i])
 	}
-
 	return nil, errors.New("Function was not understood")
 }
 
